@@ -73,6 +73,8 @@ public class JsonRpcBridge {
 
                 mInvoker = new MethodInvoker(obj.getValue());
                 javaArgs = JsonUtils.convertJsonArrayToJavaArray(arguments);
+                System.out.println(javaArgs.length);
+
                 m = mInvoker.resolve(methodName, javaArgs);
 
                 result = mInvoker.invoke(m, javaArgs);
