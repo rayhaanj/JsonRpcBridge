@@ -7,7 +7,6 @@ package me.rayhaan.java.JsonRpcBridge;
          return "Hello there from TestImpl, the string you passed is " + obj;
       }
 
-
       public SomeClass getSomeClass() {
          return new SomeClass();
       }

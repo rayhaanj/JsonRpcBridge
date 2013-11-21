@@ -22,6 +22,10 @@ public class MethodInvoker {
 
 		// All the methods in the class
 		Method[] classMethods = this.clazz.getDeclaredMethods();
+
+        for (Method me : classMethods) System.out.print(me.getName() + " ");
+        System.out.println("");
+
 		// Store the ones with the sam methodName as the one we are looking for
 		LinkedList<Method> candidates = new LinkedList<Method>();
 
@@ -31,11 +35,14 @@ public class MethodInvoker {
 			}
 		}
 
-		if (candidates.size() == 0)
+        System.out.println("Number of candidates found:" + candidates.size());
+		if (candidates.size() == 0) {
+            System.out.println("NO METHOD FOUND!");
 			throw new Exception("Method not found!");
+        }
 
 		if (candidates.size() == 1)
-			return m;
+			return candidates.get(0);
 
 		// Must have more than one method with the same name, must do matching
 		// based on method signature
@@ -55,11 +62,16 @@ public class MethodInvoker {
 	 * @return true if the arguments are for the given method
 	 */
 	public boolean matchSig(Method m, Object[] args) {
-		TypeVariable<Method>[] params = m.getTypeParameters();
+        System.out.println("MatchSig");
+		Class<?>[] params = m.getParameterTypes();
+        System.out.println(params.length);
+
 		if (params.length != args.length) return false;
 		
 		for (int i=0; i < params.length; i++) {
-			if (params[i].getClass() != args[i].getClass()) return false;
+            System.out.println("Comparing actual first argument class " + params[i] + " To " + args[i].getClass() );
+            // Compare the type of the known method parameter to the type of the one specified
+			if (params[i] != args[i].getClass()) return false;
 		}
 		return true;
 	}

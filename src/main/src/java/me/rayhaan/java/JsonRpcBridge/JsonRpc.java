@@ -6,6 +6,8 @@ import me.rayhaan.java.JsonRpcBridge.Server.Server;
 
 public class JsonRpc {
 
+    public static final String VERSION = "0.1_Alpha";
+
 	public static void main(String[] args) {
 		Server server = new Server();
 		try {

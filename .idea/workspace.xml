@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/pom.xml" afterPath="$PROJECT_DIR$/src/main/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -794,7 +800,7 @@
       <workItem from="1385067441056" duration="73000" />
       <workItem from="1385067518671" duration="1059000" />
       <workItem from="1385068583570" duration="34000" />
-      <workItem from="1385068618667" duration="8068000" />
+      <workItem from="1385068618667" duration="8155000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -816,11 +822,15 @@
       <created>1385076774028</created>
       <updated>1385076774028</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed null parameter&#10;Added Handshake&#10;">
+      <created>1385076789746</created>
+      <updated>1385076789746</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12492000" />
+    <option name="totallyTimeSpent" value="12579000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -847,7 +857,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -865,7 +875,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -922,7 +932,8 @@
     <MESSAGE value="Restructured files" />
     <MESSAGE value="Restructured files&#10;" />
     <MESSAGE value="Fixed null parameter&#10;Added Handshake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed null parameter&#10;Added Handshake" />
+    <MESSAGE value="Fixed null parameter&#10;Added Handshake&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed null parameter&#10;Added Handshake&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
