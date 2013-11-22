@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" />
+    <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="Fixed null parameter&#10;Added Handshake&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/pom.xml" afterPath="$PROJECT_DIR$/src/main/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -18,7 +14,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -75,28 +76,31 @@
       <file leaf-file-name="TestImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="13" column="7" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodInvoker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
+      <file leaf-file-name="JsonRpcBridge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
+            <state line="80" column="32" selection-start="2752" selection-end="2762" vertical-scroll-proportion="-9.8" vertical-offset="1195" max-vertical-offset="2034">
               <folding>
-                <element signature="e#806#814#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#507#534#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.075" vertical-offset="54" max-vertical-offset="882">
-              <folding />
+            <state line="11" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="882">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,10 +108,12 @@
       <file leaf-file-name="ClientThread.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="35" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.0" vertical-offset="1051" max-vertical-offset="2124">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#629#644#0" expanded="true" />
+                <element signature="e#977#993#0" expanded="true" />
+                <marker date="1385084210722" expanded="true" signature="1817:3203" placeholder="{...}" />
+                <marker date="1385084210722" expanded="true" signature="2718:3192" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -122,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonUtils.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JsonUtils.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="49" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="3078">
+            <state line="168" column="61" selection-start="5994" selection-end="5994" vertical-scroll-proportion="0.5837838" vertical-offset="2592" max-vertical-offset="3402">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,9 +163,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="8" column="35" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
-              <folding>
-                <marker date="1385070442186" expanded="true" signature="89:444" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,11 +197,13 @@
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" />
         <option value="$PROJECT_DIR$/src/main/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java" />
       </list>
     </option>
   </component>
@@ -800,7 +806,7 @@
       <workItem from="1385067441056" duration="73000" />
       <workItem from="1385067518671" duration="1059000" />
       <workItem from="1385068583570" duration="34000" />
-      <workItem from="1385068618667" duration="8155000" />
+      <workItem from="1385068618667" duration="16796000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -826,11 +832,15 @@
       <created>1385076789746</created>
       <updated>1385076789746</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed null parameter&#10;Added Handshake&#10;">
+      <created>1385076877580</created>
+      <updated>1385076877580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12579000" />
+    <option name="totallyTimeSpent" value="21220000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -857,57 +867,58 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -962,7 +973,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2034">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,7 +1022,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2034">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +1071,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1093,7 +1113,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,7 +1155,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,12 +1225,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <folding>
+            <element signature="e#806#814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="7" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="35" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="882">
           <folding>
-            <marker date="1385070442186" expanded="true" signature="89:444" placeholder="..." />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2376">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#977#993#0" expanded="true" />
+            <marker date="1385084210722" expanded="true" signature="1817:3203" placeholder="{...}" />
+            <marker date="1385084210722" expanded="true" signature="2718:3192" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="32" selection-start="2752" selection-end="2762" vertical-scroll-proportion="-9.8" vertical-offset="1195" max-vertical-offset="2034">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#507#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,64 +1304,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="49" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3078">
+        <state line="168" column="61" selection-start="5994" selection-end="5994" vertical-scroll-proportion="0.5837838" vertical-offset="2592" max-vertical-offset="3402">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="38" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.71294117" vertical-offset="1029" max-vertical-offset="1944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="965" selection-end="965" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <folding>
-            <element signature="e#806#814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="35" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.0" vertical-offset="1051" max-vertical-offset="2124">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#629#644#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="99" selection-end="99" vertical-scroll-proportion="0.075" vertical-offset="54" max-vertical-offset="882">
-          <folding />
         </state>
       </provider>
     </entry>

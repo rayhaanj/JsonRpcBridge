@@ -37,7 +37,6 @@ public class MethodInvoker {
 
         System.out.println("Number of candidates found:" + candidates.size());
 		if (candidates.size() == 0) {
-            System.out.println("NO METHOD FOUND!");
 			throw new Exception("Method not found!");
         }
 
@@ -69,7 +68,6 @@ public class MethodInvoker {
 		if (params.length != args.length) return false;
 		
 		for (int i=0; i < params.length; i++) {
-            System.out.println("Comparing actual first argument class " + params[i] + " To " + args[i].getClass() );
             // Compare the type of the known method parameter to the type of the one specified
 			if (params[i] != args[i].getClass()) return false;
 		}
