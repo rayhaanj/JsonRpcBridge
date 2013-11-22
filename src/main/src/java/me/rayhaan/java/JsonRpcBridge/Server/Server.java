@@ -10,7 +10,6 @@ public class Server {
    public final static int PORT = 3141;
    public final static boolean DEBUG = true;
 
-
    public static void main(String... args) {
       Server server = new Server();
       try {
@@ -25,8 +24,8 @@ public class Server {
       debug("Starting server");
       this.socket = new ServerSocket(Server.PORT);
 
-      /* Non-terminating */
-      while (true) {
+       // Non-terminating
+       while (true) {
          ClientThread clientThread = new ClientThread(this.socket.accept());
          debug("New client connected: " + clientThread.serverSocket.getRemoteSocketAddress().toString());
          (new Thread(clientThread)).start();

@@ -2,8 +2,8 @@ package me.rayhaan.java.JsonRpcBridge;
 
 import com.google.gson.*;
 
+import java.lang.reflect.Method;
 import java.util.*;
-import java.lang.reflect.*;
 
 import me.rayhaan.java.JsonRpcBridge.Reflect.MethodInvoker;
 
@@ -12,14 +12,15 @@ public class JsonRpcBridge {
    /**
     * HashMap of <className, instance> of class instances that are registered on this bridge.
     */
-   HashMap<String, Object> objectMap = new HashMap<String, Object>();
+   HashMap<String, Object> objectMap = new HashMap<>();
 
    /**
     * Fetches the names of classes that are registered on this bridge.
     * @return A LinkedList of class names
     */
+   @SuppressWarnings("unused")
    public LinkedList<String> getClasses() {
-      LinkedList<String> result = new LinkedList<String>();
+      LinkedList<String> result = new LinkedList<>();
       for (Map.Entry<String, Object> entry : objectMap.entrySet()) {
          result.add(entry.getKey());
       }
@@ -41,7 +42,6 @@ public class JsonRpcBridge {
     * @throws Exception
     */
    public String processRequest(String input) throws Exception {
-      Gson gson = new Gson();
       JsonParser parser = new JsonParser();
       JsonObject request = parser.parse(input).getAsJsonObject();
 
@@ -52,10 +52,10 @@ public class JsonRpcBridge {
 
    /**
     * Call a method registered on this bridge.
-    * @param fullyQualifiedMethodName
-    * @param arguments
-    * @return
-    * @throws Exception
+    * @param fullyQualifiedMethodName name of class & method in format ClassName.MethodName
+    * @param arguments Formal arguments to pass to the method
+    * @return A JSON formatted string contianing the result of the method call
+    * @throws Exception If the invocation went wrong
     */
    public String call(String fullyQualifiedMethodName, JsonArray arguments) throws Exception {
       Object result;
@@ -87,15 +87,15 @@ public class JsonRpcBridge {
    /**
     * Encapsulate the result of a method invocation in a JsonObject that can be
     * sent back to the client.
-    * @param fullyQualifiedMethodName
-    * @param invocationResult
-    * @return
+    * @param fullyQualifiedMethodName name of class & method in format ClassName.MethodName
+    * @param invocationResult Result of calling the method
+    * @return Json formatted string
     */
    public String packageResult(String fullyQualifiedMethodName, Object invocationResult) {
       //TODO: this is a hackish implementation for testing purposes, we need to
       //actually add in the javaClass of the result
       Gson gson = new Gson();
-      HashMap<String, Object> result = new HashMap<String, Object>();
+      HashMap<String, Object> result = new HashMap<>();
       result.put("method", fullyQualifiedMethodName);
       result.put("result", invocationResult);
       return gson.toJson(result);

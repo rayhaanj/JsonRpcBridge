@@ -2,7 +2,6 @@ package me.rayhaan.java.JsonRpcBridge;
 
 import java.lang.reflect.Field;
 import java.util.Map;
-import java.util.LinkedList;
 
 import com.google.gson.*;
 
@@ -30,6 +29,12 @@ public class JsonUtils {
         return result;
     }
 
+    /**
+     * Converts a Json array to a Java array
+     * @param jsa the json array to convert to a java object array
+     * @return an array of java objects
+     * @throws Exception
+     */
     public static Object[] convertJsonArrayToJavaArray(JsonArray jsa)
             throws Exception {
         Object[] result = new Object[jsa.size()];
@@ -76,12 +81,11 @@ public class JsonUtils {
      */
     public static Object jsonObjectToObject(JsonObject JSON, String javaClass)
             throws Exception {
-        Object instance = (Object) Class.forName(javaClass).newInstance();
+        Object instance = Class.forName(javaClass).newInstance();
         Class<?> clazz = instance.getClass();
         Field f;
 
         String fieldName;
-        Object value;
 
         for (Map.Entry<String, JsonElement> entry : JSON.entrySet()) {
             fieldName = entry.getKey();
@@ -148,9 +152,22 @@ public class JsonUtils {
     }
 
     /**
+     * Serialize an object and add in the javaClass string to a JsonObject
+     * @param obj Object to serialize
+     * @return Json serialized result
+     */
+    public static JsonObject javaClassFieldInjector(Object obj) {
+        String type = obj.getClass().toString();
+        Gson gson = new Gson();
+        JsonObject jObj = gson.toJsonTree(obj).getAsJsonObject();
+        jObj.addProperty("jsonClass", type);
+        return jObj;
+    }
+
+    /**
      * Get the javaClass of an object that we have serialized
      *
-     * @param JSON
+     * @param JSON Object to tey and extract the java class from
      * @return the class name
      */
     public static String javaClassFieldExtractor(JsonObject JSON) throws Exception {
