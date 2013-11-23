@@ -1,10 +1,9 @@
 package me.rayhaan.java.JsonRpcBridge.Reflect;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.TypeVariable;
 import java.util.LinkedList;
 
-import com.google.gson.JsonArray;
+
 
 public class MethodInvoker {
 
@@ -18,7 +17,6 @@ public class MethodInvoker {
 
 	public Method resolve(String methodName, Object[] arguments)
 			throws Exception {
-		Method m = null;
 
 		// All the methods in the class
 		Method[] classMethods = this.clazz.getDeclaredMethods();
@@ -27,7 +25,7 @@ public class MethodInvoker {
         System.out.println("");
 
 		// Store the ones with the sam methodName as the one we are looking for
-		LinkedList<Method> candidates = new LinkedList<Method>();
+		LinkedList<Method> candidates = new LinkedList<>();
 
 		for (Method candidate : clazz.getDeclaredMethods()) {
 			if (candidate.getName().equals(methodName)) {

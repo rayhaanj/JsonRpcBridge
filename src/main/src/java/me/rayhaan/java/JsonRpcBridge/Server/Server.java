@@ -1,23 +1,26 @@
 package me.rayhaan.java.JsonRpcBridge.Server;
 
+import me.rayhaan.java.JsonRpcBridge.JsonRpcBridge;
+import me.rayhaan.java.JsonRpcBridge.TestImpl;
+
 import java.net.*;
 import java.io.*;
 
 
-public class Server {
+public class Server implements Runnable {
+
+   JsonRpcBridge globalBridge;
 
    ServerSocket socket;
    public final static int PORT = 3141;
    public final static boolean DEBUG = true;
 
-   public static void main(String... args) {
-      Server server = new Server();
-      try {
-         server.serve_forever();
-      } catch (Exception e) {
-         e.printStackTrace();
-      }
-   }
+    public Server() throws Exception {
+        TestImpl testImplementation = new TestImpl();
+        this.globalBridge = new JsonRpcBridge();
+        globalBridge.exportClass("TestImpl", testImplementation);
+    }
+
 
    public void serve_forever() throws IOException {
       
@@ -26,13 +29,22 @@ public class Server {
 
        // Non-terminating
        while (true) {
-         ClientThread clientThread = new ClientThread(this.socket.accept());
+         ClientThread clientThread = new ClientThread(this.socket.accept(), globalBridge);
          debug("New client connected: " + clientThread.serverSocket.getRemoteSocketAddress().toString());
          (new Thread(clientThread)).start();
       }
       /* End Non-terminating */
 
    }
+
+    @Override
+    public void run() {
+        try {
+            serve_forever();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
    public static void debug(String msg) {

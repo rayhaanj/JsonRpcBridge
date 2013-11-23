@@ -4,9 +4,13 @@ import java.util.LinkedList;
 
    public class TestImpl implements Test {
 
+
+      private String testString = "";
+
       public String method(String obj) throws Exception {
          System.out.println("Method is being run!");
-         return "Hello there from TestImpl, the string you passed is " + obj;
+         this.testString = testString + obj;
+         return "Hello " + testString;
       }
 
       public SomeClass getSomeClass() {

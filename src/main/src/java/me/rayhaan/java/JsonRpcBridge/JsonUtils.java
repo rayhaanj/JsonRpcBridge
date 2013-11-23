@@ -156,18 +156,19 @@ public class JsonUtils {
      * @param obj Object to serialize
      * @return Json serialized result
      */
-    public static JsonObject javaClassFieldInjector(Object obj) {
+    public static JsonElement javaClassFieldInjector(Object obj) {
         String type = obj.getClass().toString();
         Gson gson = new Gson();
+        if (! gson.toJsonTree(obj).isJsonObject()) return gson.toJsonTree(obj);
         JsonObject jObj = gson.toJsonTree(obj).getAsJsonObject();
-        jObj.addProperty("jsonClass", type);
+        jObj.addProperty("javaClass", type);
         return jObj;
     }
 
     /**
      * Get the javaClass of an object that we have serialized
      *
-     * @param JSON Object to tey and extract the java class from
+     * @param JSON Object to extract the java class from
      * @return the class name
      */
     public static String javaClassFieldExtractor(JsonObject JSON) throws Exception {
