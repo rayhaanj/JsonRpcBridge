@@ -20,7 +20,7 @@ public class DynamicProxy implements java.lang.reflect.InvocationHandler {
       );
    }
 
-   public Object invoke( Object proxy, Method m, Object[] args) throws java.lang.Throwable {
+   public Object invoke(Object proxy, Method m, Object[] args) throws java.lang.Throwable {
       Object result;
       try {
          System.out.println("Method " + m.getName() + " is going to be called");

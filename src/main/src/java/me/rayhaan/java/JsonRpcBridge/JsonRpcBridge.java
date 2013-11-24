@@ -18,13 +18,26 @@ public class JsonRpcBridge {
     * Fetches the names of classes that are registered on this bridge.
     * @return A LinkedList of class names
     */
-   @SuppressWarnings("unused")
-   public LinkedList<String> getClasses() {
-      LinkedList<String> result = new LinkedList<>();
+   public String getBridgeMethods(int requestID) {
+       HashMap<String, LinkedList<String>> methodMap = new HashMap<>();
+
+      String className;
+      Class<?> clazz;
       for (Map.Entry<String, Object> entry : objectMap.entrySet()) {
-         result.add(entry.getKey());
+         className = entry.getKey();
+         clazz = entry.getValue().getClass();
+
+          LinkedList<String> methodList = new LinkedList<>();
+         for (Method m : clazz.getDeclaredMethods()) {
+             methodList.add(m.getName());
+         }
+         methodMap.put(className, methodList);
       }
-      return result;
+
+       HashMap<String, Object> result = new HashMap<>();
+       result.put("requestID", requestID);
+       result.put("result", methodMap);
+      return new Gson().toJson(result);
    }
 
    /**
@@ -44,8 +57,13 @@ public class JsonRpcBridge {
    public String processRequest(String input) throws Exception {
       JsonParser parser = new JsonParser();
       JsonObject request = parser.parse(input).getAsJsonObject();
+      int requestID = request.get("requestID").getAsInt();
 
       String fullyQualifiedMethodName = request.get("method").getAsString();
+
+       if (fullyQualifiedMethodName.equals("Bridge.listMethods")) {
+           return getBridgeMethods(requestID);
+       }
 
       Object[] arguments;
       if (request.get("args").isJsonNull()) {
@@ -54,7 +72,7 @@ public class JsonRpcBridge {
         arguments = JsonUtils.convertJsonArrayToJavaArray(request.get("args").getAsJsonArray());
       }
 
-      int requestID = request.get("requestID").getAsInt();
+
       return call(requestID, fullyQualifiedMethodName, arguments);
    }
 

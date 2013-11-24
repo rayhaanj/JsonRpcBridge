@@ -44,10 +44,8 @@ public class ServerEventListener implements Runnable {
     }
 
     private String readIn() throws IOException, ClassNotFoundException {
-        String data = null;
-        while (data == null) {
-            data = this.iStream.readLine();
-        }
+        String data = this.iStream.readLine();
+        if (data == null) throw new IOException("Connection closed!");
         return data;
     }
 }

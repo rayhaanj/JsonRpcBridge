@@ -13,6 +13,10 @@ import java.util.LinkedList;
          return "Hello " + testString;
       }
 
+       public int add(int a, int b, int c) {
+           return a + b + c;
+       }
+
       public SomeClass getSomeClass() {
          return new SomeClass();
       }

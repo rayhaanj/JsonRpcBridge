@@ -55,7 +55,6 @@ public class ConnectorThread implements Runnable {
         System.out.println("[Debug] connected to server " + this.conn.getInetAddress());
         ServerEventListener eventListener = new ServerEventListener(this, this.iStream);
         (new Thread(eventListener)).start();
-
     }
 
 
@@ -80,7 +79,7 @@ public class ConnectorThread implements Runnable {
      * @param arguments
      * @return
      */
-    public Future callMethod(String className, String methodName, Object[] arguments) throws IOException {
+    public Future<JsonElement> callMethod(String className, String methodName, Object... arguments) throws IOException {
         System.out.println("Calling method " + methodName);
         final int requestID = ++callCount;
         HashMap<String, Object> request = new HashMap<>();
@@ -94,7 +93,7 @@ public class ConnectorThread implements Runnable {
         // Fire the request
         this.writeString(JSON);
 
-        class CheckResponse implements Callable {
+        class CheckResponse implements Callable<JsonElement> {
             ConnectorThread connectorThread;
             int requestID;
 
@@ -104,18 +103,16 @@ public class ConnectorThread implements Runnable {
             }
 
             @Override
-            public Object call() throws Exception {
+            public JsonElement call() throws Exception {
                 while (! this.connectorThread.serverCallResponses.containsKey(requestID)) {
                     // Just wait till the serverCallResponses contains an element with our key
-                    System.out.println("Stuck!");
-                    Thread.sleep(1000);
+                    Thread.sleep(10);
                 }
-                System.out.println("Broke out of loop");
                 return this.connectorThread.serverCallResponses.get(requestID);
             }
         }
 
-        FutureTask futureResponse = new FutureTask(new CheckResponse(this, requestID));
+        FutureTask futureResponse = new FutureTask<>(new CheckResponse(this, requestID));
         futureResponse.run();
         return futureResponse;
     }
@@ -152,10 +149,8 @@ public class ConnectorThread implements Runnable {
 
     /** Utility methods */
     private String readIn() throws IOException, ClassNotFoundException {
-        String data = null;
-        while (data == null) {
-            data = this.iStream.readLine();
-        }
+        String data = iStream.readLine();
+        if (data == null) throw new IOException("Connection closed!");
         return data;
     }
 
