@@ -36,9 +36,9 @@ public class DynamicProxy implements java.lang.reflect.InvocationHandler {
       return result;
    }
 
-   public static void main (String[] args) throws Exception  {
-      Test dnmprx = (Test) DynamicProxy.newInstance( new TestImpl() );
-      String result = (String) dnmprx.method("blah");
-   }
+//   public static void main (String[] args) throws Exception  {
+//      Test dnmprx = (Test) DynamicProxy.newInstance( new TestImpl() );
+//      String result = (String) dnmprx.method("blah");
+//   }
 
 }

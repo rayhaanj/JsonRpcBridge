@@ -12,13 +12,32 @@ import java.util.concurrent.Future;
 
 public class ServerConnector {
 
-    public static void main(String... args) throws Exception {
+    public void processBounce(String ss) {
+        System.out.println("Got Bounce!" + ss);
+    }
+
+    public void testServerConnecion() throws Exception {
         ConnectorThread ct = new ConnectorThread("localhost", 3141);
         (new Thread(ct)).start();
 
-        Future<JsonElement> result = ct.callMethod("TestImpl", "add", 1,2,3);
-        JsonElement elem = result.get();
-        System.out.println("Result" + elem);
+        ct.registerPushListener("push", this, this.getClass().getDeclaredMethod("managePush", String.class));
+        Future<JsonElement> result = ct.callMethod("TestImpl", "throwException");
+
+        ct.registerPushListener("bounce", this, this.getClass().getDeclaredMethod("processBounce", String.class));
+
+        Future<JsonElement> res2 = ct.callMethod("TestImpl", "bounce", "bounce", "Lorem ipsum dolor");
+        try {
+            JsonElement elem = result.get();
+            System.out.println("Result" + elem);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    public static void main(String... args) throws Exception {
+        (new ServerConnector()).testServerConnecion();
     }
 
 

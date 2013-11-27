@@ -19,9 +19,12 @@ public class ClientThread implements Runnable {
     private BufferedReader istream;
     private PrintWriter ostream;
 
-    public ClientThread(Socket serverSocket, JsonRpcBridge globalBridge) {
+    Server server;
+
+    public ClientThread(Server server, Socket serverSocket, JsonRpcBridge globalBridge) {
         this.serverSocket = serverSocket;
         this.globalBridge = globalBridge;
+        this.server = server;
     }
 
     /**
@@ -56,12 +59,15 @@ public class ClientThread implements Runnable {
         return false;
     }
 
+    public void push(String data) throws IOException{
+        this.writeString(data);
+    }
+
     @Override
     public void run() {
         try {
-            this.ostream = new PrintWriter(this.serverSocket.getOutputStream());
-            this.ostream.flush();
-            this.istream = new BufferedReader(new InputStreamReader(this.serverSocket.getInputStream()));
+
+            this.openConnection();
 
             /* Handshake */
             this.writeString(generateHandshake(JsonRpc.VERSION));
@@ -75,36 +81,55 @@ public class ClientThread implements Runnable {
             }
             System.out.println("Successfully negotiated connection");
 
-            String input, output;
-
-            /* Non-terminating */
-            while (true) {
-                input = readIn();
-                if (input.equals("QUIT")) break;
-                output = this.globalBridge.processRequest(input);
-                System.out.println(output);
-                this.writeString(output);
-            }
-            /* End Non-terminating */
+            // start a new thread to listen for client requests
+            RequestListener listener = new RequestListener(this.globalBridge, this.istream, this.ostream);
+            (new Thread(listener)).start();
 
         } catch (Exception e) {
             e.printStackTrace();
+            try { this.closeConnection(); } catch (IOException closeErr) { closeErr.printStackTrace(); }
         }
 
     }
 
+    /**
+     * Initialize the connection to the client
+     * @throws IOException
+     */
+    private void openConnection() throws IOException {
+        this.ostream = new PrintWriter(this.serverSocket.getOutputStream());
+        this.ostream.flush();
+        this.istream = new BufferedReader(new InputStreamReader(this.serverSocket.getInputStream()));
+        this.server.registerClient(this);
+    }
+
+    /**
+     * Close the connection to the client
+     * @throws IOException
+     */
     private void closeConnection() throws IOException {
         this.istream.close();
         this.ostream.close();
+        this.server.unregisterClient(this);
     }
 
 
-    private String readIn() throws IOException, ClassNotFoundException {
+    /**
+     * Read in a string fron the network connection
+     * @return String read in from the client
+     * @throws IOException
+     */
+    private String readIn() throws IOException {
         String data = istream.readLine();
         if (data == null) throw new IOException("Connection closed!");
         return data;
     }
 
+    /**
+     * Send a string to the client
+     * @param s The string to send to the client
+     * @throws IOException
+     */
     private void writeString(String s) throws IOException {
         this.ostream.println(s);
         this.ostream.flush();

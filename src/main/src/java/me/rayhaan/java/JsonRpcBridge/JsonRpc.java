@@ -12,6 +12,7 @@ public class JsonRpc {
 
 		try {
             Server server = new Server();
+            server.getGlobalBridge().export("TestImpl", new TestImpl(server));
             server.serve_forever();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

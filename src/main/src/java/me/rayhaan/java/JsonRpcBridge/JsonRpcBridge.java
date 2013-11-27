@@ -43,15 +43,14 @@ public class JsonRpcBridge {
    /**
     * Add a new instance of a class to the bridge.
     */
-   public void exportClass(String className, Object instance) throws Exception {
+   public void export(String className, Object instance) throws Exception {
       this.objectMap.put(className, instance);
    }
-
 
    /**
     * Main entry point for requests coming into the bridge, called from the Server's ClientThread
     * @param input data to be processed
-    * @return final result after invoking method / packagin
+    * @return final result after invoking method / packaging
     * @throws Exception
     */
    public String processRequest(String input) throws Exception {
@@ -97,16 +96,17 @@ public class JsonRpcBridge {
             if (className.equals(obj.getKey())) {
 
                 mInvoker = new MethodInvoker(obj.getValue());
-                System.out.println(javaArgs.length);
 
                 m = mInvoker.resolve(methodName, javaArgs);
-
-                result = mInvoker.invoke(m, javaArgs);
-
+                try {
+                    result = mInvoker.invoke(m, javaArgs);
+                } catch (Exception e) {
+                    return packageException(requestID, fullyQualifiedMethodName, e);
+                }
                return packageResult(requestID, fullyQualifiedMethodName, result);
             }
          }
-      throw new Exception("Class not found / registered on bridge");
+      return packageException(requestID, fullyQualifiedMethodName, new Exception("Class not found / registered on bridge"));
    }
 
 
@@ -128,7 +128,13 @@ public class JsonRpcBridge {
            throw new Exception("Maps are not supported at this time");
        }
 
-       JsonElement serializedInvocationResult = JsonUtils.javaClassFieldInjector(invocationResult);
+       JsonElement serializedInvocationResult;
+       if (invocationResult != null) {
+            serializedInvocationResult = JsonUtils.javaClassFieldInjector(invocationResult);
+       } else {
+           // FIXME: Add support for null returns!
+           serializedInvocationResult = (new Gson()).toJsonTree("Null Response!");
+       }
 
       Gson gson = new Gson();
       HashMap<String, Object> result = new HashMap<>();
@@ -138,8 +144,24 @@ public class JsonRpcBridge {
       result.put("result", serializedInvocationResult);
       return gson.toJson(result);
    }
-   
-   
 
+    /**
+     * Package an exception for sending back to the client
+     * @param requestID
+     * @param fullyQualifiedMethodName
+     * @param e
+     * @return
+     */
+   public String packageException(int requestID, String fullyQualifiedMethodName, Exception e) {
+       Gson gson = new Gson();
+       HashMap<String, Object> result = new HashMap<>();
+
+       result.put("requestID", requestID);
+       result.put("method", fullyQualifiedMethodName);
+       result.put("isException", true);
+       System.out.println("Exception message" + e.getMessage());
+       result.put("exception", e.getMessage());
+       return gson.toJson(result);
+   }
 
 }

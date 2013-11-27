@@ -68,6 +68,12 @@ public class ConnectorThread implements Runnable {
         System.out.println("Response recieved!");
         JsonElement data = new JsonParser().parse(serverData);
         int requestID = data.getAsJsonObject().get("requestID").getAsInt();
+
+        if (data.getAsJsonObject().has("isException")) {
+            this.serverCallResponses.put(requestID, data);
+            System.out.println(data);
+        }
+
         JsonElement callResult = data.getAsJsonObject().get("result");
         this.serverCallResponses.put(requestID, callResult);
     }
@@ -104,9 +110,16 @@ public class ConnectorThread implements Runnable {
 
             @Override
             public JsonElement call() throws Exception {
+                // timeout = 10000ms
+                int timeoutLen = 10000;
                 while (! this.connectorThread.serverCallResponses.containsKey(requestID)) {
                     // Just wait till the serverCallResponses contains an element with our key
                     Thread.sleep(10);
+                }
+
+                // TODO: fix null value in hashmap, should be the JsonElement
+                if (this.connectorThread.serverCallResponses.get(requestID) == null) {
+                    throw new Exception("There was an error calling the method!");
                 }
                 return this.connectorThread.serverCallResponses.get(requestID);
             }
