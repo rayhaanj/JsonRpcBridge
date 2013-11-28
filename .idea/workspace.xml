@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JsonRpcBridge" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
+    <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="Wrote client&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -68,6 +68,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java" line="159" class="me.rayhaan.java.JsonRpcBridge.JsonUtils" package="me.rayhaan.java.JsonRpcBridge">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,41 +94,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JsonRpc.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
+      <file leaf-file-name="ClientThread.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="486">
+            <state line="62" column="31" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="2628">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientThread.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
+      <file leaf-file-name="RequestListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/RequestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="3271" selection-end="3271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2178">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonRpcBridge.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="4" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="2718">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+            <state line="32" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1116">
               <folding />
             </state>
           </provider>
@@ -120,21 +115,17 @@
       <file leaf-file-name="DynamicProxy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="38" column="0" selection-start="1180" selection-end="1378" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="900">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.19550562" vertical-offset="309" max-vertical-offset="1098">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="50" column="0" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1386">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,21 +133,35 @@
       <file leaf-file-name="ConnectorThread.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="7" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="101" column="0" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.0" vertical-offset="1818" max-vertical-offset="3294">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerConnector.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ServerConnector.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="75" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="15" column="5" selection-start="311" selection-end="311" vertical-scroll-proportion="0.5082353" vertical-offset="0" max-vertical-offset="792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonRpcBridge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="78" selection-start="4191" selection-end="4191" vertical-scroll-proportion="0.0" vertical-offset="2178" max-vertical-offset="3114">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/PushHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="432">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +169,7 @@
       <file leaf-file-name="TestImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="28" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="738">
+            <state line="39" column="54" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1188">
               <folding />
             </state>
           </provider>
@@ -173,10 +178,8 @@
       <file leaf-file-name="ServerEventListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="32" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1026">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="51" column="0" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,6 +192,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -204,15 +208,16 @@
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/PushListener.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/PushHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" />
-        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/RequestListener.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java" />
+        <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java" />
       </list>
     </option>
@@ -278,8 +283,22 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="17" />
-    <option name="width" value="1598" />
+    <option name="width" value="1600" />
     <option name="height" value="882" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -292,7 +311,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -307,13 +326,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default" />
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,6 +460,22 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default" />
+        <subPane subId="Problems" />
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,18 +486,20 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -479,7 +509,7 @@
       <recent name="$PROJECT_DIR$/src/main/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.ServerConnector">
     <configuration default="false" name="JsonRpc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -870,7 +900,12 @@
       <workItem from="1385067441056" duration="73000" />
       <workItem from="1385067518671" duration="1059000" />
       <workItem from="1385068583570" duration="34000" />
-      <workItem from="1385068618667" duration="64920000" />
+      <workItem from="1385068618667" duration="67414000" />
+      <workItem from="1385307759549" duration="10573000" />
+      <workItem from="1385381353585" duration="59000" />
+      <workItem from="1385381434231" duration="14469000" />
+      <workItem from="1385505821339" duration="10889000" />
+      <workItem from="1385655725813" duration="2242000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -912,11 +947,19 @@
       <created>1385229551868</created>
       <updated>1385229551868</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Wrote client&#10;">
+      <created>1385258735775</created>
+      <updated>1385258735775</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added server side pushing">
+      <created>1385520691445</created>
+      <updated>1385520691445</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69344000" />
+    <option name="totallyTimeSpent" value="110070000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -939,21 +982,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="17" width="1598" height="882" extended-state="6" />
+    <frame x="1" y="17" width="1600" height="882" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39923954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22522523" sideWeight="0.50094163" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -962,12 +1004,13 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22551547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.49717513" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923954" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -993,7 +1036,9 @@
     <MESSAGE value="Fixed null parameter&#10;Added Handshake" />
     <MESSAGE value="Fixed null parameter&#10;Added Handshake&#10;" />
     <MESSAGE value="Wrote client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote client" />
+    <MESSAGE value="Wrote client&#10;" />
+    <MESSAGE value="Added server side pushing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added server side pushing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1007,36 +1052,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2034">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="53" selection-start="3294" selection-end="3294" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="3006">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
@@ -1048,43 +1078,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="6" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="2034">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="53" selection-start="3294" selection-end="3294" vertical-scroll-proportion="0.0" vertical-offset="1692" max-vertical-offset="3006">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
@@ -1096,36 +1114,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="27" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="3078">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
@@ -1137,36 +1145,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="27" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="3078">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
@@ -1178,28 +1176,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="66" column="7" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="1512" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="59" selection-start="2525" selection-end="2525" vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2034">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="45" selection-start="3196" selection-end="3196" vertical-scroll-proportion="0.0" vertical-offset="1404" max-vertical-offset="3078">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,11 +1202,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1422">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="10" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1422" />
       </provider>
     </entry>
     <entry file="uml://MODULES/mdl-JsonRpcBridge">
@@ -1238,9 +1224,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/pom.xml">
@@ -1252,139 +1236,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="497">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/PushHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.46588236" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="5940" selection-end="5940" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3402">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="497" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/gson-2.2.4.jar!/com/google/gson/JsonParser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="188" selection-end="188" vertical-scroll-proportion="-4.32" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
+        <state line="7" column="11" selection-start="188" selection-end="188" vertical-scroll-proportion="-4.32" vertical-offset="0" max-vertical-offset="342" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/gson-2.2.4.jar!/com/google/gson/JsonElement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-13.92" vertical-offset="606" max-vertical-offset="1062">
-          <folding />
-        </state>
+        <state line="54" column="0" selection-start="1702" selection-end="1702" vertical-scroll-proportion="-13.92" vertical-offset="606" max-vertical-offset="1062" />
       </provider>
     </entry>
     <entry file="jar:///opt/java/src.zip!/java/net/PlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="16" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1134">
-          <folding />
-        </state>
+        <state line="63" column="16" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1134" />
       </provider>
     </entry>
     <entry file="jar:///opt/java/src.zip!/java/net/AbstractPlainSocketImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="397" column="0" selection-start="13040" selection-end="13040" vertical-scroll-proportion="0.0" vertical-offset="6465" max-vertical-offset="12276">
-          <folding>
-            <element signature="e#0#21930#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#13660#13661#0" expanded="false" />
-            <element signature="e#13698#13699#0" expanded="false" />
-            <element signature="e#14133#14134#0" expanded="false" />
-            <element signature="e#14161#14162#0" expanded="false" />
-            <element signature="e#14205#14206#0" expanded="false" />
-            <element signature="e#14243#14244#0" expanded="false" />
-            <element signature="e#14273#14274#0" expanded="false" />
-            <element signature="e#14305#14306#0" expanded="false" />
-            <element signature="e#14345#14346#0" expanded="false" />
-            <element signature="e#14387#14388#0" expanded="false" />
-            <element signature="e#20454#20455#0" expanded="false" />
-            <element signature="e#20484#20485#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="397" column="0" selection-start="13040" selection-end="13040" vertical-scroll-proportion="0.0" vertical-offset="6465" max-vertical-offset="12276" />
       </provider>
     </entry>
     <entry file="jar:///opt/java/src.zip!/java/net/ServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="529" column="0" selection-start="20147" selection-end="20147" vertical-scroll-proportion="0.0" vertical-offset="8859" max-vertical-offset="15804">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/java/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.3317647" vertical-offset="6321" max-vertical-offset="9666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/java/src.zip!/java/net/SocketInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="23" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.0" vertical-offset="1029" max-vertical-offset="4554">
-          <folding />
-        </state>
+        <state line="529" column="0" selection-start="20147" selection-end="20147" vertical-scroll-proportion="0.0" vertical-offset="8859" max-vertical-offset="15804" />
       </provider>
     </entry>
     <entry file="jar:///opt/java/src.zip!/java/util/concurrent/FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="0" selection-start="8759" selection-end="8759" vertical-scroll-proportion="0.0" vertical-offset="3963" max-vertical-offset="8190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1026">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="75" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="28" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="738">
-          <folding />
-        </state>
+        <state line="261" column="0" selection-start="8759" selection-end="8759" vertical-scroll-proportion="0.0" vertical-offset="3963" max-vertical-offset="8190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Test.java">
@@ -1394,46 +1276,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Reflect/MethodInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="7" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="3060">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="69" column="0" selection-start="2008" selection-end="2008" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/java/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.3317647" vertical-offset="6321" max-vertical-offset="9666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1180" selection-end="1378" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="846">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="486">
+        <state line="16" column="26" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="3132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/TestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="54" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/java/src.zip!/java/net/SocketInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="23" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.3317647" vertical-offset="1029" max-vertical-offset="4554" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="0" selection-start="5641" selection-end="5641" vertical-scroll-proportion="0.3317647" vertical-offset="2667" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/RequestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="803" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1116">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/JsonRpcBridge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="4" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2718">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="121" column="78" selection-start="4191" selection-end="4191" vertical-scroll-proportion="0.0" vertical-offset="2016" max-vertical-offset="3024">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/ClientThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="3271" selection-end="3271" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2178">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="62" column="31" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/PushHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.19550562" vertical-offset="309" max-vertical-offset="1098">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="50" column="0" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ServerConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="311" selection-end="311" vertical-scroll-proportion="0.5082353" vertical-offset="0" max-vertical-offset="792">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,10 +1383,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>JsonRpcBridge</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1494,7 +1436,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
