@@ -2,6 +2,7 @@ package me.rayhaan.java.JsonRpcBridge.Client;
 
 import com.google.gson.JsonElement;
 
+import java.awt.*;
 import java.io.*;
 import java.util.concurrent.Future;
 
@@ -21,7 +22,8 @@ public class ServerConnector {
 
         ct.registerPushListener("bounce", this, this.getClass().getDeclaredMethod("processBounce", String.class));
 
-        Future<JsonElement> res2 = ct.callMethod("TestImpl", "bounce", "bounce", "Lorem ipsum dolor");
+        Future<JsonElement> res2 = ct.callMethod("TestImpl", "customObjectTest", new Point(1,2));
+
         try {
             JsonElement elem = res2.get();
             System.out.println("Result" + elem);

@@ -54,7 +54,6 @@ public class Server implements Runnable {
             ClientThread clientThread = new ClientThread(this, this.socket.accept(), globalBridge);
             debug("New client connected: " + clientThread.serverSocket.getRemoteSocketAddress().toString());
             (new Thread(clientThread)).start();
-
         }
       /* End Non-terminating */
 

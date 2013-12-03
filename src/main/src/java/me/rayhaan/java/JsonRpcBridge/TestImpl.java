@@ -3,6 +3,7 @@ package me.rayhaan.java.JsonRpcBridge;
 import com.google.gson.Gson;
 import me.rayhaan.java.JsonRpcBridge.Server.Server;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -39,6 +40,12 @@ public class TestImpl implements Test {
         result.put("args", new Object[] {ss});
         String jsonData = (new Gson()).toJson(result);
         this.server.pushAllClients(jsonData);
+    }
+
+    public String customObjectTest(Point p) {
+        String ss = "X coord: " + p.x + " y coord " + p.y;
+        System.out.println(ss);
+        return ss;
     }
 
 

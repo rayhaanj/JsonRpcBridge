@@ -4,6 +4,7 @@ import java.io.*;
 import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
@@ -91,7 +92,16 @@ public class ConnectorThread implements Runnable {
         HashMap<String, Object> request = new HashMap<>();
         request.put("requestID", requestID);
         request.put("method", className + "." + methodName);
-        request.put("args", arguments);
+
+        /**
+         * Serialize the objects to pass as arguments
+         */
+        LinkedList<JsonElement> serializedArgs = new LinkedList<>();
+        for (Object o : arguments) {
+            serializedArgs.add(JsonUtils.javaClassFieldInjector(o));
+        }
+
+        request.put("args", serializedArgs);
         Gson gson = new GsonBuilder().serializeNulls().create();
 
         String JSON = gson.toJson(request);
