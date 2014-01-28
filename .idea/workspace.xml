@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -964,7 +963,7 @@
       <workItem from="1385947793735" duration="757000" />
       <workItem from="1386034642564" duration="3497000" />
       <workItem from="1390857097772" duration="4688000" />
-      <workItem from="1390867207289" duration="3072000" />
+      <workItem from="1390867207289" duration="3077000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -1034,11 +1033,15 @@
       <created>1390871294294</created>
       <updated>1390871294294</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Updated documentation&#10;">
+      <created>1390871346876</created>
+      <updated>1390871346876</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128195000" />
+    <option name="totallyTimeSpent" value="128200000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
