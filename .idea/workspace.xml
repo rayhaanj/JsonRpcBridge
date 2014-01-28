@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -173,15 +174,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="73" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.37650603" vertical-offset="686" max-vertical-offset="1350">
+                <state line="52" column="73" selection-start="1536" selection-end="1536" vertical-scroll-proportion="-9.615385" vertical-offset="686" max-vertical-offset="1350">
                   <folding />
                 </state>
               </provider>
               <provider editor-type-id="MarkdownPreviewEditor">
                 <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="6" column="6" selection-start="57" selection-end="57" vertical-scroll-proportion="0.1536273" vertical-offset="0" max-vertical-offset="703">
+                  <folding />
+                </state>
               </provider>
             </entry>
           </file>
@@ -223,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -953,7 +964,7 @@
       <workItem from="1385947793735" duration="757000" />
       <workItem from="1386034642564" duration="3497000" />
       <workItem from="1390857097772" duration="4688000" />
-      <workItem from="1390867207289" duration="3019000" />
+      <workItem from="1390867207289" duration="3072000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -1019,11 +1030,15 @@
       <created>1390871288042</created>
       <updated>1390871288042</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated documentation&#10;">
+      <created>1390871294294</created>
+      <updated>1390871294294</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128142000" />
+    <option name="totallyTimeSpent" value="128195000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1337,11 +1352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="497" />
@@ -1456,12 +1466,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="73" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.37650603" vertical-offset="686" max-vertical-offset="1350">
+        <state line="52" column="73" selection-start="1536" selection-end="1536" vertical-scroll-proportion="-9.615385" vertical-offset="686" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="57" selection-end="57" vertical-scroll-proportion="0.1536273" vertical-offset="0" max-vertical-offset="703">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
