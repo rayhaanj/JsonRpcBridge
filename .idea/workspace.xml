@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75f0339c-d11e-49c2-811a-9f2e6e93e6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" afterPath="$PROJECT_DIR$/src/main/src/java/me/rayhaan/java/JsonRpcBridge/Client/ConnectorThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JsonRpcBridge.iws" />
@@ -955,7 +953,7 @@
       <workItem from="1385947793735" duration="757000" />
       <workItem from="1386034642564" duration="3497000" />
       <workItem from="1390857097772" duration="4688000" />
-      <workItem from="1390867207289" duration="3013000" />
+      <workItem from="1390867207289" duration="3019000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit - IntelliJ">
       <created>1385068732224</created>
@@ -1017,11 +1015,15 @@
       <created>1390870967900</created>
       <updated>1390870967900</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated documentation&#10;">
+      <created>1390871288042</created>
+      <updated>1390871288042</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128136000" />
+    <option name="totallyTimeSpent" value="128142000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1101,7 +1103,8 @@
     <MESSAGE value="Added server side pushing" />
     <MESSAGE value="Wrote client&#10;" />
     <MESSAGE value="Updated documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated documentation" />
+    <MESSAGE value="Updated documentation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated documentation&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
