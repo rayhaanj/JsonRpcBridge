@@ -8,10 +8,10 @@ import java.util.LinkedList;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
+import java.util.logging.Logger;
 
 import com.google.gson.*;
 import me.rayhaan.java.JsonRpcBridge.JsonUtils;
-
 
 /**
  * Created by rayhaan on 11/22/13.
@@ -27,6 +27,8 @@ public class ConnectorThread implements Runnable {
     HashMap<String, PushHandler> pushHandlers = new HashMap<>();
 
     HashMap<Integer, JsonElement> serverCallResponses = new HashMap<>();
+
+    private Logger log = Logger.getLogger("ConnectorThread");
 
     public ConnectorThread(String host, int port) throws Exception {
         // setup the connection
@@ -53,7 +55,7 @@ public class ConnectorThread implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("[Debug] connected to server " + this.conn.getInetAddress());
+        this.log.fine("[Debug] connected to server " + this.conn.getInetAddress());
         ServerEventListener eventListener = new ServerEventListener(this, this.iStream);
         (new Thread(eventListener)).start();
     }
@@ -87,8 +89,8 @@ public class ConnectorThread implements Runnable {
      * @return
      */
     public Future<JsonElement> callMethod(String className, String methodName, Object... arguments) throws IOException {
-        System.out.println("Calling method " + methodName);
         final int requestID = ++callCount;
+        this.log.fine("Calling method " + methodName + " With requestID " + requestID);
         HashMap<String, Object> request = new HashMap<>();
         request.put("requestID", requestID);
         request.put("method", className + "." + methodName);
@@ -153,6 +155,7 @@ public class ConnectorThread implements Runnable {
     public void registerPushListener(String tag, Object instance, Method m) {
         this.pushHandlers.put(tag, new PushHandler(instance, m));
     }
+
 
     /**
      * Call the method associated with a registered push handler

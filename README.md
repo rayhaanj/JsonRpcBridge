@@ -34,6 +34,12 @@ ConnectorThread ct = new ConnectorThread("localhost", 3141);
 
 Future<JsonElement> res2 = ct.callMethod("TestImpl", "customObjectTest", new Point(1,2));
 
+try {
+    JsonElement elem = res2.get();
+    System.out.println("Result" + elem);
+} catch (Exception e) {
+    e.printStackTrace();
+}
 ```
 
 
@@ -44,7 +50,7 @@ Using server-side push handling
 ```java
 
 // To send data to all the clients
-
+Server.push("<Json serialized data with a tag, method , and arguments>");
 ```
 
 ``` java
@@ -52,6 +58,12 @@ Using server-side push handling
 ConnectorThread ct = new Connectorthread(...); // fill in host/port
 
 // Register a method to be called when a push request comes in
-ct.registerPushListener("push_handle_name", MyClass, Myclass.class.getDeclaredMethod("myMethod"));
+ct.registerPushListener("push_handle_name", MyClass, Myclass.class.getDeclaredMethod("processBounce"));
+
+...
+
+public void processBounce(String ss) {
+    System.out.println("Got Bounce!" + ss);
+}
 
 ```
