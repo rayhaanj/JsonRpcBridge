@@ -2,13 +2,14 @@ package me.rayhaan.java.JsonRpcBridge.Reflect;
 
 import java.lang.reflect.Method;
 import java.util.LinkedList;
-
-
+import java.util.logging.Logger;
 
 public class MethodInvoker {
 
 	private Class<?> clazz;
 	private Object instance;
+    private Logger log = Logger.getLogger("MethodInvoker");
+
 
 	public MethodInvoker(Object instance) {
 		this.clazz = instance.getClass();
@@ -21,9 +22,6 @@ public class MethodInvoker {
 		// All the methods in the class
 		Method[] classMethods = this.clazz.getDeclaredMethods();
 
-        for (Method me : classMethods) System.out.print(me.getName() + " ");
-        System.out.println("");
-
 		// Store the ones with the sam methodName as the one we are looking for
 		LinkedList<Method> candidates = new LinkedList<>();
 
@@ -33,20 +31,24 @@ public class MethodInvoker {
 			}
 		}
 
-        System.out.println("Number of candidates found:" + candidates.size());
+        System.err.println("Number of candidates found:" + candidates.size());
 		if (candidates.size() == 0) {
+            this.log.severe("Method not found!");
 			throw new Exception("Method not found!");
         }
 
-		if (candidates.size() == 1)
+		if (candidates.size() == 1) {
+            this.log.fine("Method found" + candidates.get(0));
 			return candidates.get(0);
+        }
 
 		// Must have more than one method with the same name, must do matching
 		// based on method signature
 
 		for (Method candidate : candidates) {
 			if (matchSig(candidate, arguments)) {
-				return candidate;
+                this.log.fine("Method found based on signature matching " + candidate);
+                return candidate;
 			}	
 		}
         throw new Exception("Could not match to any method");
@@ -59,7 +61,6 @@ public class MethodInvoker {
 	 * @return true if the arguments are for the given method
 	 */
 	public boolean matchSig(Method m, Object[] args) {
-        System.out.println("MatchSig");
 		Class<?>[] params = m.getParameterTypes();
         System.out.println(params.length);
 

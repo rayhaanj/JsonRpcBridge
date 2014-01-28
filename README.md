@@ -9,6 +9,7 @@ This package is designed to be loaded into an existing java application, from wh
 
 Using the Bridge
 ----------------
+You can create a server and export a class using the following procedure:
 
 ```java
 import me.rayhaan.java.JsonRpcBridge.Server.Server;
@@ -18,7 +19,39 @@ Server jsonBridgeServer = new Server();
 JsonRpcBridge bridge = jsonBridgeServer.getGlobalBridge();
 
 SomeClass myClass = new SomeClass();
-bridge.export("SomeClass", myClass);
+bridge.export("SomeClass", myClass); // Export the object myCLass under the handle SomeClass
 
-jsonBridgeServer.serve_forever();
+jsonBridgeServer.serve_forever(); // runs the server loop listening for connections
+```
+
+Connecting to the server as a client
+
+``` java
+import me.rayhaan.java.JsonRpcBridge.Client.ConnectorThread;
+
+ConnectorThread ct = new ConnectorThread("localhost", 3141);
+(new Thread(ct)).start();
+
+Future<JsonElement> res2 = ct.callMethod("TestImpl", "customObjectTest", new Point(1,2));
+
+```
+
+
+Using server-side push handling
+-------------------------------
+
+
+```java
+
+// To send data to all the clients
+
+```
+
+``` java
+// To listen for server sent pushes on the client side
+ConnectorThread ct = new Connectorthread(...); // fill in host/port
+
+// Register a method to be called when a push request comes in
+ct.registerPushListener("push_handle_name", MyClass, Myclass.class.getDeclaredMethod("myMethod"));
+
 ```

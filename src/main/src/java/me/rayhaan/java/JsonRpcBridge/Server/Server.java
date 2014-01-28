@@ -5,6 +5,7 @@ import me.rayhaan.java.JsonRpcBridge.JsonRpcBridge;
 import java.net.*;
 import java.io.*;
 import java.util.LinkedList;
+import java.util.logging.Logger;
 
 public class Server implements Runnable {
 
@@ -15,9 +16,12 @@ public class Server implements Runnable {
     public final static int PORT = 3141;
     public final static boolean DEBUG = true;
 
+    private final Logger log = Logger.getLogger("Server");
+
     public Server() throws Exception {
         this.globalBridge = new JsonRpcBridge();
         this.clients = new LinkedList<>();
+
     }
 
     public JsonRpcBridge getGlobalBridge() {
@@ -68,8 +72,8 @@ public class Server implements Runnable {
         }
     }
 
-    public static void debug(String msg) {
-        if (Server.DEBUG) System.out.println("[Debug] " + msg);
+    public void debug(String msg) {
+        this.log.fine(msg);
     }
 
 
